@@ -1,0 +1,40 @@
+ * Serving Flask app 'main.py'
+ * Debug mode: on
+Address already in use
+Port 8080 is in use by another program. Either identify and stop that program, or start the server with a different port.
+ * Serving Flask app 'main.py'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.128.0.3:8080
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 158-297-528
+24.184.11.255 - - [11/Feb/2025 17:14:53] "GET /hello/red HTTP/1.1" 200 -
+24.184.11.255 - - [11/Feb/2025 17:14:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ * Detected change in '/home/agodbole/csc330/code/weather/activity-3/main.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 158-297-528
+24.184.11.255 - - [11/Feb/2025 17:18:02] "[33mGET /hello/green/Amol HTTP/1.1[0m" 404 -
+24.184.11.255 - - [11/Feb/2025 17:18:22] "GET /hello/Amol HTTP/1.1" 200 -
+24.184.11.255 - - [11/Feb/2025 17:18:26] "GET /hello/Imad HTTP/1.1" 200 -
+ * Detected change in '/home/agodbole/csc330/code/weather/activity-3/main.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 158-297-528
+24.184.11.255 - - [11/Feb/2025 17:21:07] "GET /hello/Imad/red HTTP/1.1" 200 -
+24.184.11.255 - - [11/Feb/2025 17:21:12] "GET /hello/Imad/green HTTP/1.1" 200 -
+24.184.11.255 - - [11/Feb/2025 17:21:25] "GET /hello/Amol/green HTTP/1.1" 200 -
+24.184.11.255 - - [11/Feb/2025 17:21:27] "[33mGET /hello/Amol/ HTTP/1.1[0m" 404 -
+24.184.11.255 - - [11/Feb/2025 17:21:30] "GET /hello/Amol HTTP/1.1" 200 -
+24.184.11.255 - - [11/Feb/2025 17:21:35] "GET /hello/Amol/green HTTP/1.1" 200 -
+24.184.11.255 - - [11/Feb/2025 17:21:39] "GET /hello/Amol/green HTTP/1.1" 200 -
+92.255.57.58 - - [11/Feb/2025 17:23:46] "[33mGET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1[0m" 404 -
+ * Detected change in '/home/agodbole/csc330/code/weather/activity-3/main.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 158-297-528
+92.255.57.58 - - [11/Feb/2025 17:42:08] "[33mGET /actuator/gateway/routes HTTP/1.1[0m" 404 -
