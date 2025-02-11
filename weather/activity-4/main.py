@@ -13,7 +13,7 @@ def read_temps():
     URL = 'http://api.openweathermap.org/data/2.5/weather'
 
     for city in cities:
-        payload = {'APPID':'c6d8f8d28ed380de9c13b5c4316244b3', 'q':city}
+        payload = {'APPID':'<<API  KEY>>', 'q':city}
         response = requests.get(URL,params = payload)
 
         if response.status_code == 200:
