@@ -21,7 +21,7 @@ def add(num1, num2):
 
 @app.route('/weather/<city>')
 def weather(city):
-    payload = {'APPID':'c6d8f8d28ed380de9c13b5c4316244b3', 'q':city}
+    payload = {'APPID':'<<API KEY>>', 'q':city}
     url = 'https://api.openweathermap.org/data/2.5/weather'
 
     response = requests.get(url, params=payload)
