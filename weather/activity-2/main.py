@@ -15,9 +15,9 @@ def greeting():
 def greet_name(name):
     return ("Hello " + name)
 
-@app.route('/add/<num1>/<num2>')
+@app.route('/add/<int:num1>/<int:num2>')
 def add(num1, num2):
-    return str(int(num1) + int (num2))
+    return str(num1+num2)
 
 @app.route('/weather/<city>')
 def weather(city):

