@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+		<table>
+			<tr>
+				<th>City</th>
+				<th>Population</th>
+			</tr>
+			{% for key, value in cities.items() %}
+			<tr>
+				<td>{{key}}</td>
+				<td>{{value}}</td>
+			</tr>
+			{% endfor %}
+{% endblock %}
