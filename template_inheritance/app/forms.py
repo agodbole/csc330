@@ -10,3 +10,8 @@ class PopulationForm(FlaskForm):
 class DeleteForm(FlaskForm):
     city = StringField('City:', validators=[DataRequired()])
     submit = SubmitField('Delete')
+
+class SearchForm(FlaskForm):
+    city = StringField('City:', validators=[DataRequired()])
+    population = IntegerField('Population', render_kw={"readonly":True})
+    submit = SubmitField('Search')

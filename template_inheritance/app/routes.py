@@ -1,6 +1,6 @@
 from app import app
 from flask import render_template, redirect, url_for
-from app.forms import PopulationForm, DeleteForm
+from app.forms import PopulationForm, DeleteForm, SearchForm
 from app import cities
 
 
@@ -28,6 +28,18 @@ def delete_record():
         # Redirect to the view_all route (view function)
         return redirect(url_for('view'))
     return render_template('delete.html', form=form)
+
+@app.route('/search',methods=['GET','POST'])
+def search():
+    form = SearchForm()
+    if form.validate_on_submit():
+        if form.city.data in cities:
+            form.population.data = cities[form.city.data]
+            print (form.population.data)
+            print (form.city.data)
+            #redirect back to the same page -- search
+    return render_template('search.html', form=form)
+
 
 @app.route('/')
 @app.route('/view_all')
