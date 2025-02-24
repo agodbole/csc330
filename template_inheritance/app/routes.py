@@ -35,8 +35,6 @@ def search():
     if form.validate_on_submit():
         if form.city.data in cities:
             form.population.data = cities[form.city.data]
-            print (form.population.data)
-            print (form.city.data)
             #redirect back to the same page -- search
     return render_template('search.html', form=form)
 
