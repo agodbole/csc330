@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> CSC330 Flask template demo </title>
+	</head>
+	<body>
+		<h1 style=color:red>City populations </h1>
+		<ul>
+			{% for the_city in cities %}
+			<li>{{the_city.name}},{{the_city.country}},{{the_city.population}}</li>
+			{% endfor %}
+		</ul>
+	</body>
+</html>
