@@ -14,3 +14,7 @@ class DeleteForm(FlaskForm):
 class SearchForm(FlaskForm):
     city = StringField('City:', validators=[DataRequired()])
     submit = SubmitField('Search')
+
+class PopulationSearchForm(FlaskForm):
+    population = IntegerField('Population: ', validators=[DataRequired()])
+    submit = SubmitField('PopSearch')
